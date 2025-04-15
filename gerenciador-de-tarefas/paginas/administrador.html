@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../recursos/css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Área do Administrador</h1>
+    </header>
+    <main>
+        <form id="form-tarefa">
+            <label for="titulo">Título da Tarefa:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+            
+            <label for="responsabilidade">Nível de Responsabilidade:</label>
+            <select id="responsabilidade" name="responsabilidade">
+                <option value="baixo">Baixo</option>
+                <option value="medio">Médio</option>
+                <option value="alto">Alto</option>
+            </select>
+            
+            <label for="prazo">Prazo:</label>
+            <input type="date" id="prazo" name="prazo" required>
+            
+            <button type="submit">Cadastrar Tarefa</button>
+        </form>
+    </main>
+    <script src="../recursos/js/administrador.js"></script>
+</body>
+</html>
